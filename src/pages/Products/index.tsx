@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState, useEffect, useContext } from 'react';
+import Navbar from '../../components/Navbar';
+import ProductFeed from './ProductFeed';
+
 
 function Products() {
     return (
-        <div>Products</div>
+        <div className='flex flex-col'>
+            <Navbar />
+            <ProductFeed />
+        </div>
     )
 }
 

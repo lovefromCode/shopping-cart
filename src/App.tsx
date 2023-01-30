@@ -5,7 +5,6 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import Navbar from './components/Navbar';
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
@@ -14,7 +13,6 @@ import Payment from "./pages/Payment";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Products />} />
         <Route path="cart/" element={<Cart />} />
